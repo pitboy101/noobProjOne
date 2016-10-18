@@ -1,0 +1,18 @@
+#include <fake.h>
+#define swap(x,y) y=x^y; x=x^y; y=x^y;
+struct NothingUsefulIncludedInThisStruct{ int DoesALongNameMakeThingsLookGeeky; }
+typedef struct tthis aName; struct tthis{int a; aName* next};
+typedef NothingUsefulIncludedInThisStruc MissingT
+int badIndentation(void){ return 1; }
+void notBored(void){ return 1; }
+void neverMind(void){ puts("Just Ignore it"); }
+int main(void){
+    puts("hello world") /*  oh I can't see what's wrong with the code above */
+    char FakeCoding[] = "Is so lame";
+    int UselessInt_1 = 0 ,AnotherUselessInt_2 =0;
+    FILE* notGonnaOpenOne = NULL; 
+	while( notBored() ) {  swap(UselessInt_1, AnotherUselessInt_2) }
+if( badIndentation() )  neverMind();
+     // 1 ReallyN33dToGo2Bed|\|0w,SoS leepy
+}
+		
