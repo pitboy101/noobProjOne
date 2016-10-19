@@ -1,18 +1,68 @@
-#include <fake.h>
 #define swap(x,y) y=x^y; x=x^y; y=x^y;
-struct NothingUsefulIncludedInThisStruct{ int DoesALongNameMakeThingsLookGeeky; }
-typedef struct tthis aName; struct tthis{int a; aName* next};
-typedef NothingUsefulIncludedInThisStruc MissingT
-int badIndentation(void){ return 1; }
-void notBored(void){ return 1; }
-void neverMind(void){ puts("Just Ignore it"); }
-int main(void){
-    puts("hello world") /*  oh I can't see what's wrong with the code above */
-    char FakeCoding[] = "Is so lame";
-    int UselessInt_1 = 0 ,AnotherUselessInt_2 =0;
-    FILE* notGonnaOpenOne = NULL; 
-	while( notBored() ) {  swap(UselessInt_1, AnotherUselessInt_2) }
-if( badIndentation() )  neverMind();
-     // 1 ReallyN33dToGo2Bed|\|0w,SoS leepy
-}
-		
+void pr(char* chrString)
+{
+    if(strlen(chrString) == 0)
+        printf("\n");
+    else
+        printf("%s", chrString);
+    
+    }
+
+void fakeHacking(void)
+{
+    puts("************\
+    *****************\nPress | to quit\n\
+    or an\
+    y othe\
+    r key to s\
+    tart\n********************\
+    *********\n");
+    if ( _getch() == '|') {puts("NULL"); getch() ;return ;}
+        /*show some instruction, and quit if | is entered*/ 
+    FILE* filePointer = NULL;
+    filePointer = fopen("Codes_QuestionMark", "r");
+    system("color 02") ;
+    if(filePointer == NULL)  /*If fake coding file not found\
+, return to basic interface*/
+    {
+        printf("Your don't have the codes yet. \
+        \nPlease download the code (Co\
+des_QuestionMark) from noobProjOne\n");
+        getch();
+        system("cls");
+        return;
+        }
+    char temp = 'A';
+    while( (temp = fgetc(filePointer) ) != EOF ) 
+    {
+        if(getch() == '|')   /* if | is entered, return, else c\
+ontinue to print char by char*/
+        {system("color 07") ; system("cls"); return;}
+        
+        printf("%c", temp);
+        }
+    fclose(filePointer);
+    system("color 07") ;
+    system("cls");
+    }
+    
+void cls(void) /* This function is used to cl\
+ean your screan. For windows only */
+{
+    system("cls");
+}>
+
+
+
+
+
+***************************************************
+
+	0	1     0	     01110  1   0
+	0	1    0 0    1	    0  1
+	1	0   1   1   0	    1010
+	001100110  1010010  1       0   1
+	1	0 1	  0 1       0    1
+	0	01	   1 010100 1	  0	
+
+***************************************************
